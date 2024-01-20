@@ -1,5 +1,5 @@
 {
-  "name": "max_components",
+  "name": "maxvandewiel/mc",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -65,7 +65,7 @@
    ]
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/maxvandewiel"
-  },
-  "name": "maxvandwiel/mc",
+    "registry": "https://npm.pkg.github.com/maxvandewiel",
+    "name": "maxvandewiel/mc"
+  }
 }
