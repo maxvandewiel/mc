@@ -23,10 +23,12 @@ const StyledButton = styled.button<ButtonProps>`
   background-color: ${(props) => (props.primary ? (props?.theme?.colors?.onyx ? props.theme.colors.onyx : "#f4c4c4") : (props?.theme?.colors?.lightBlue ? props.theme.colors.lightBlue : "#FF5655"))};
   padding: ${(props) =>
     props.size === "small"
-      ? "7px 25px 8px"
+      ? props?.theme?.padding?.small ? props.theme.padding.small : "7px 25px 8px"
       : props.size === "medium"
-      ? "9px 30px 11px"
-      : "14px 30px 16px"};
+      ? props?.theme?.padding?.medium ? props.theme.padding.medium : "9px 30px 11px"
+      : props.size === "large"
+      ? props?.theme?.padding?.large ? props.theme.padding.large : "14px 30px 16px"
+      : props?.theme?.padding?.extraLarge ? props.theme.padding.extraLarge : "22px 30px 25px"};
 `;
 
 const Button: React.FC<ButtonProps> = ({

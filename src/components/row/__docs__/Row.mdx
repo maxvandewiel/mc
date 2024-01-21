@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Row from "./Row.stories.tsx";
+
+<Meta of={Row} title="Row" />
+
+# Row
+
+Row component for holding items in a row as a responsive grid row.
+
+#### Example
+
+<Canvas of={Row.Primary} />
+
+## Usage
+
+```ts
+import { Row } from '@maxvandewiel/mc'
+
+
+const Example = () => {
+  return (
+      <Row />
+  );
+};
+
+export default Example;
+```
+
+

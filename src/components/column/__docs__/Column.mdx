@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Column from "./Column.stories.tsx";
+
+<Meta of={Column} title="Column" />
+
+# Column
+
+Column component for holding items in a column as a responsive grid.
+
+#### Example
+
+<Canvas of={Column.Primary} />
+
+## Usage
+
+```ts
+import { Column } from '@maxvandewiel/mc'
+
+
+const Example = () => {
+  return (
+      <Column />
+  );
+};
+
+export default Example;
+```
+
+
