@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Container from "./Container.stories.tsx";
+
+<Meta of={Container} title="Container" />
+
+# Container
+
+Container component. Use teams to control the container.
+
+#### Example
+
+<Canvas of={Container.Primary} />
+
+## Usage
+
+```ts
+import { Container } from '@maxvandewiel/mc'
+
+
+const Example = () => {
+  return (
+      <Container />
+  );
+};
+
+export default Example;
+```
+
+
