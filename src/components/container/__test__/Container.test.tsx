@@ -5,8 +5,8 @@ import Container from "../Container";
 
 describe("Container component", () => {
   it("Container should render correctly", () => {
-    render(<Container />);
-    const container = screen.getByRole("container");
+    render(<Container>testing container</Container>);
+    const container = screen.getByText("testing container");
     expect(container).toBeInTheDocument();
   });
 });
