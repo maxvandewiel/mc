@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import Container, { ContainerProps } from "../Container";
+import Text, { TextProps } from "../Text";
 
-const Example: FC<ContainerProps> = ({}) => {
+const Example: FC<TextProps> = ({}) => {
   return (
     <div
       style={{
@@ -11,7 +11,7 @@ const Example: FC<ContainerProps> = ({}) => {
         height: "100%",
       }}
     >
-      <Container>This is a container text</Container>
+      <Text></Text>
     </div>
   );
 };

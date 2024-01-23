@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ColorCircle from "./ColorCircle.stories.tsx";
+
+<Meta of={ColorCircle} title="ColorCircle" />
+
+# ColorCircle
+
+ColorCircle component.
+
+#### Example
+
+<Canvas of={ColorCircle.Primary} />
+
+## Usage
+
+```ts
+import { ColorCircle } from '@maxvandewiel/mc'
+
+
+const Example = () => {
+  return (
+      <ColorCircle />
+  );
+};
+
+export default Example;
+```
+
+

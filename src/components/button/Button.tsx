@@ -12,15 +12,13 @@ export type ButtonProps = {
 const StyledButton = styled.button<ButtonProps>`
   border: 0;
   line-height: 1;
-  font-family: ${(props) => (props?.theme?.fonts ? props.theme.fonts[0] : "Roboto")};
-  font-size: ${(props) => (props?.theme?.fontSizes?.medium ? props.theme.fontSizes.medium : "2em")};
   cursor: pointer;
   font-weight: 700;
   font-weight: bold;
   border-radius: 10px;
   display: inline-block;
-  color: ${(props) => (props.primary ? (props?.theme?.colors?.lightBlue ? props.theme.colors.lightBlue : "#FF5655") : (props?.theme?.colors?.onyx ? props.theme.colors.onyx : "#f4c4c4"))};
-  background-color: ${(props) => (props.primary ? (props?.theme?.colors?.onyx ? props.theme.colors.onyx : "#f4c4c4") : (props?.theme?.colors?.lightBlue ? props.theme.colors.lightBlue : "#FF5655"))};
+  color: ${(props) => (props.primary ? (props?.theme?.colors?.primary ? props.theme.colors.primary : "#423EA2") : (props?.theme?.colors?.secondary ? props.theme.colors.secondary : "#625ced"))};
+  background-color: ${(props) => (props.primary ? (props?.theme?.colors?.secondary ? props.theme.colors.secondary : "#625ced") : (props?.theme?.colors?.primary ? props.theme.colors.primary : "#423EA2"))};
   padding: ${(props) =>
     props.size === "small"
       ? props?.theme?.padding?.small ? props.theme.padding.small : "7px 25px 8px"

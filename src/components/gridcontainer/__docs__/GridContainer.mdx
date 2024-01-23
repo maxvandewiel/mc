@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GridContainer from "./GridContainer.stories.tsx";
+
+<Meta of={GridContainer} title="GridContainer" />
+
+# GridContainer
+
+GridContainer component.
+
+#### Example
+
+<Canvas of={GridContainer.Primary} />
+
+## Usage
+
+```ts
+import { GridContainer } from '@maxvandewiel/mc'
+
+
+const Example = () => {
+  return (
+      <GridContainer />
+  );
+};
+
+export default Example;
+```
+
+

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Body from "./Body.stories.tsx";
+
+<Meta of={Body} title="Body" />
+
+# Body
+
+Body component.
+
+#### Example
+
+<Canvas of={Body.Primary} />
+
+## Usage
+
+```ts
+import { Body } from '@maxvandewiel/mc'
+
+
+const Example = () => {
+  return (
+      <Body />
+  );
+};
+
+export default Example;
+```
+
+

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Card from "./Card.stories.tsx";
+
+<Meta of={Card} title="Container" />
+
+# Card
+
+Card component.
+
+#### Example
+
+<Canvas of={Card.Primary} />
+
+## Usage
+
+```ts
+import { Card } from '@maxvandewiel/mc'
+
+
+const Example = () => {
+  return (
+      <Card content="content" title="title" />
+  );
+};
+
+export default Example;
+```
+
+

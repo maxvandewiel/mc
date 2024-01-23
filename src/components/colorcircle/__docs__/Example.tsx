@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import Container, { ContainerProps } from "../Container";
+import ColorCircle, { ColorCircleProps } from "../ColorCircle";
 
-const Example: FC<ContainerProps> = ({}) => {
+const Example: FC<ColorCircleProps> = ({}) => {
   return (
     <div
       style={{
@@ -11,7 +11,7 @@ const Example: FC<ContainerProps> = ({}) => {
         height: "100%",
       }}
     >
-      <Container>This is a container text</Container>
+      <ColorCircle color="#6e9424"></ColorCircle>
     </div>
   );
 };

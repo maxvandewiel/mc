@@ -4,6 +4,7 @@ import max_theme from './max_theme';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import { lightTheme, darkTheme, GlobalStyles } from '../src/themes';
+import { withRouter } from 'storybook-addon-react-router-v6';
 
 const preview: Preview = {
   parameters: {
@@ -27,7 +28,9 @@ const preview: Preview = {
     defaultTheme: 'light',
     Provider: ThemeProvider,
     GlobalStyles,
-    })]
+    }),
+    withRouter
+    ]
 };
 
 export default preview;

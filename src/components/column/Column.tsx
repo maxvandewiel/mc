@@ -4,7 +4,8 @@ export type ColumnProps = {};
 
 const StyledColumn = styled.div`
     float: left;
-    width: 100%
+    width: 100%;
+
     @media only screen and (min-width: 768px) {
       width: ${(props) => props?.theme?.span ? props.theme.span : "8.33"}%;
     }

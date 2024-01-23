@@ -8,6 +8,7 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
     "@storybook/addon-themes",
+    "storybook-addon-react-router-v6",
     "@storybook/themes"
   ],
   framework: {
@@ -18,4 +19,4 @@ const config: StorybookConfig = {
     autodocs: "tag",
   },
 };
-export default config;
+export default config satisfies StorybookConfig;

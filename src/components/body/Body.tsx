@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
-export type ContainerProps = {};
+export type BodyProps = {};
 
-const StyledContainer = styled.div`
+const StyledBody = styled.div`
     display: "flex";
     width: 100%;
-    border: ${(props) => `1px solid ${(props?.theme?.colors?.secondary ? props.theme.colors.secondary : "black")}`};
+    height: 100%;
     color: ${(props) => (props?.theme?.colors?.text ? props.theme.colors.text : "black")};
     background-color: ${(props) => (props?.theme?.colors?.background ? props.theme.colors.background : "white") };
 `;
 
-const Container: React.FC<ContainerProps> = ({
+const Body: React.FC<BodyProps> = ({
   ...props
 }) => {
   return (
-    <StyledContainer
+    <StyledBody
       {...props}
     >
-    </StyledContainer>
+    </StyledBody>
   );
 };
 
-export default Container;
+export default Body;
 
